@@ -11,7 +11,7 @@ namespace CSharpShapeCalculator
         public void Run()
         {
             length = InputOutput.CollectDouble("length");
-            width = InputOutput.CollectDouble("length");
+            width = InputOutput.CollectDouble("width");
 
             CalculateArea();
             InputOutput.OutputResult(result, "area");
