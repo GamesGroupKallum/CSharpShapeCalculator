@@ -1,0 +1,11 @@
+namespace CSharpShapeCalculator
+{
+    class Help
+    {
+        public void Run()
+        {
+            Console.WriteLine("The shapes you can work with are: Square, Rectangle, Isosceles Triangle, Equilateral Triangle, Scalene Triangle, Dodecahedron, Cuboid, Circle, Sphere, Cone, Cylinder, Hexagon, Pentagon.\nAll 2D shapes will have an area and a perimeter, all 3D shapes will have a surface area and a volume, except for sphere which will only have volume. \nThe calculations for these attributes are as follows." +
+                "Square: Area = height * height. Perimter = height * 4.\n Rectangle: Area = height * width. Perimeter = (2 * height) + (2 * width)\n Isosceles Triangle: Area =  base * height / 2. Perimeter = 2 * side a + base \n Equilateral Triangle: Area =  base * height / 2. Perimeter = 2 * side a + base \n Scalene Triangle:  Area =  base * height / 2. Perimeter = side a + side b + side c \n Dodecahedron: Area = 3(2+√3)•s². Perimeter = 12 x side. \n Cuboid: Surface Area = 2(length *width) + 2(length * height) + 2(height * width.) Volume = length * width * height\nCircle: Area = π * radius². Perimeter = 2* π * radius \nSphere: Volume = (4/3) * π * radius to the power of 3 \nCone: Surface Area = π * radius * √(height² * radius².)) Volume = π * radius² *(height/3)\n Cylinder: Surface area = 2 * π * radius * height) + 2 * π * radius². Volume =  π * radius² * height. \n Hexagon: Area = ((3 *√3) /2) * side². Perimeter =  6 * side\n Pentagon: Area = (1/4) √(5 *5 + 2√5) * side². Perimeter = 5 * side. ");
+        }
+    }
+}
