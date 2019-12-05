@@ -28,9 +28,9 @@ namespace CSharpShapeCalculator
             radius = InputOutput.CollectDouble("length");
             height = InputOutput.CollectDouble("height");
             CalculateSurfaceArea();
-            InputOutput.OutputResult("area", result);
+            InputOutput.OutputResult("surface area", result);
             CalculateVolume();
-            InputOutput.OutputResult("Circumference", result);
+            InputOutput.OutputResult("Volume", result);
         }
     }
 }
