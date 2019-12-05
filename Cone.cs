@@ -18,7 +18,7 @@ namespace CSharpShapeCalculator
 
         private void CalculateVolume()
         {
-            result = (Math.PI * Math.Pow(radius, 2)) * (height / 3)
+            result = (Math.PI * Math.Pow(radius, 2)) * (height / 3);
         }
 
 
