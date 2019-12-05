@@ -4,20 +4,20 @@ using System.Text;
 
 namespace CSharpShapeCalculator
 {
-    class Circle
+    class Sphere
     {
         private double radius = 0.0;
         private double result = 0.0;
 
-        private void CalculateArea()
+        private void CalculateSurfaceArea()
         {
 
-            result = Math.PI * Math.Pow(radius, 2);
+            result = 4 * Math.PI * Math.Pow(radius, 2);
         }
 
-        private void CalculateCircumference()
+        private void CalculateVolume()
         {
-            result = 2 * Math.PI * radius;
+            result = (4 / 3 * Math.PI) * Math.Pow(radius, 3);
         }
 
 
@@ -25,9 +25,9 @@ namespace CSharpShapeCalculator
         public void Run()
         {
             radius = InputOutput.CollectDouble("length");
-            CalculateArea();
-            InputOutput.OutputResult("area", result);
-            CalculateCircumference();
+            CalculateSurfaceArea();
+            InputOutput.OutputResult(" surfacearea", result);
+            CalculateVolume();
             InputOutput.OutputResult("Circumference", result);
         }
     }
