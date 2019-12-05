@@ -12,10 +12,10 @@ namespace CSharpShapeCalculator
             edge = InputOutput.CollectDouble("edge");           
 
             CalculateArea();
-            InputOutput.OutputResult(result, "area");
+            InputOutput.OutputResult("area", result);
 
             CalculatePerimeter();
-            InputOutput.OutputResult(result, "perimeter");
+            InputOutput.OutputResult("perimeter", result);
         }
 
         private void CalculateArea()
