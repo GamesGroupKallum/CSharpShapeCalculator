@@ -11,6 +11,14 @@ namespace CSharpShapeCalculator
         public void Run()
         {
             length = InputOutput.CollectDouble("length");
+
+            width = InputOutput.CollectDouble("width");
+
+            CalculateArea();
+            InputOutput.OutputResult("area", result);
+
+            CalculatePerimeter();
+            InputOutput.OutputResult("perimeter", result);
             width = InputOutput.CollectDouble("length");
 
             CalculateArea();
@@ -18,6 +26,7 @@ namespace CSharpShapeCalculator
 
             CalculatePerimeter();
             InputOutput.OutputResult(result, "perimeter");
+
         }
 
         private void CalculateArea()
