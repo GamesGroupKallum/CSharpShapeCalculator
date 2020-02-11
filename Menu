@@ -10,11 +10,11 @@ namespace CSharpShapeCalculator
 
         public void Run()
         {
-            do
+            while (doesProgramLoop)
             {
                 RunMenuText();
                 CollectInput();
-            } while (doesProgramLoop);
+            }
         }
 
         private void RunMenuText()
